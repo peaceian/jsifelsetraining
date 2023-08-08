@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaveScriptifelse</title>
+    <style>
+        body  {margin: 20px;background-color:lightcyan}
+    </style>
+</head>
+
+<body>
+    
+    <h2 id="score" style="color:yellow;font-size:80px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></h2>
+
+    <p id="content" style="color:red;font-size:70px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-decoration: underline;"></p>
+    
+
+    <script>
+        document.getElementById("score").innerHTML = 'Content for the Score you own:'
+
+        let x = prompt('please key in score (10,20,30,40,...)', '0');
+        if (x == 0) { document.getElementById("content").innerHTML = 'Shame on you !'; }
+        else if (x = Math.random()) {document.getElementById("content").innerHTML = "Please refresh and key in the score(0~100)!";}//for decimal防止小數
+        else if (x > 100) { document.getElementById("content").innerHTML = 'Please refresh and key in the score(0~100)!'; }//x>100 first.
+        else if (x > 0 && x < 40) { document.getElementById("content").innerHTML = 'More practice!'; }
+        else if (x >= 40 && x < 60) { document.getElementById("content").innerHTML = "Almost!"; }
+        else if (x >= 60 && x < 80) { document.getElementById("content").innerHTML = "Nice!"; }
+        else if (x >= 80 && x < 90) { document.getElementById("content").innerHTML = 'Great!'; }
+        else if (x >= 90 && x < 100) { document.getElementById("content").innerHTML = "Excellent!"; }
+        else if (x == 100) { document.getElementById("content").innerHTML = 'Perfect!'; }
+        else { document.getElementById("content").innerHTML = "Have no score key in, refresh and do it!" }
+    </script>
+
+</body>
+
+</html>
