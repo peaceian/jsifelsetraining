@@ -23,7 +23,7 @@
 
         let x = prompt('please key in score (10,20,30,40,...)', '0');
         if (x == 0) { document.getElementById("content").innerHTML = 'Shame on you !'; }
-        else if (x = Math.random()) {document.getElementById("content").innerHTML = "Please refresh and key in the score(0~100)!";}//for decimal防止小數
+        else if (x < 1 ) {document.getElementById("content").innerHTML = "Please refresh and key in the score(0~100)!";}//for decimal防止小數
         else if (x > 100) { document.getElementById("content").innerHTML = 'Please refresh and key in the score(0~100)!'; }//x>100 first.
         else if (x > 0 && x < 40) { document.getElementById("content").innerHTML = 'More practice!'; }
         else if (x >= 40 && x < 60) { document.getElementById("content").innerHTML = "Almost!"; }
