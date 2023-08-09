@@ -2,5 +2,5 @@
 This project is about the "if else" in Java Script. <br>
 This project is a simple score content for training the if...else loop.<br>
 Using the prompt to key in scores and feedback contents.<br>
-Need to judge the >, <,==,and the scores that in the codes. 
+Need to judge the >, <,==,and the scores that in the codes.<br> 
 Not rigorous for the judgment of the numerical.
